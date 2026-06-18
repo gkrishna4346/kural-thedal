@@ -130,7 +130,7 @@ if search:
             disabled=True
         )
 
-        st.subheader("📜 Kural")
+        st.subheader("குறள்")
 
         st.text_area(
             "",
