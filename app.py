@@ -69,7 +69,7 @@ left, right = st.columns([3, 1])
 with left:
 
     kural_num = st.number_input(
-        "குறள் எண்",
+        "Kural Number",
         min_value=1,
         max_value=1330,
         value=1
@@ -81,7 +81,7 @@ with right:
 
 
 search = st.button(
-    "தேடு",
+    "🔍 Search",
     use_container_width=True
 )
 
@@ -112,7 +112,7 @@ if search:
 
             st.text_input(
                 "Section Name",
-                str(r.get("பால்", "")),
+                str(r.get("Section Name", "")),
                 disabled=True
             )
 
@@ -120,21 +120,21 @@ if search:
 
             st.text_input(
                 "Chapter Number",
-                str(r.get("அதிகாரம் எண்", "")),
+                str(r.get("Chapter Number", "")),
                 disabled=True
             )
 
         st.text_input(
             "Chapter Name",
-            str(r.get("அதிகாரம் பெயர்", "")),
+            str(r.get("Chapter Name", "")),
             disabled=True
         )
 
-        st.subheader("குறள்")
+        st.subheader("📜 Kural")
 
         st.text_area(
             "",
-            str(r.get("குறள்", "")),
+            str(r.get("Kural", "")),
             height=120
         )
 
